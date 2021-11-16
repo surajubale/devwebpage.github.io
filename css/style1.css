@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0px; 
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(red, green, blue);
+}
+
+span{font-size: .9rem;
+color: #757373;
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(red, green, blue);
+}
+
+/*Navigation*/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    
+}
+
+nav img{
+   width: 80px;
+   cursor: pointer;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation{
+    display: flex;
+}
+
+#menu-ham{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#menu-close{
+    display: none;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(red, green, blue);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover{
+    color: yellow;
+}
+
+#home{
+    background-image:url(../back2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#home h2{
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p{
+    width: 50%;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    display: inline-block
+}
+
+ #home .blue{
+    background-color:blue;
+    color: white;
+    transition: 00.3s ease;
+}
+
+#home .blue:hover{
+    background-color:white;
+    color: black;
+}
+
+#home .yellow{
+    background-color: yellow;
+    color:black;
+    transition: 00.3s ease;
+}
+
+#home .yellow:hover{
+    background-color: white;
+    color:blue;
+}
+
+#features{
+    padding:5vw 8vw 5vw 8vw;
+    text-align: center;
+}
+
+#features .fea-base{
+    display:grid;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features .fea-box {
+    background-color:seashell;
+    padding: 10px;
+    text-align: start;
+}
+
+
+#features .fea-box i{
+font-size: 2.3rem;
+color:black;
+}
+
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    padding: 13px 0px 7px 0px;
+}
+
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+
+/*Course*/
+
+#course{
+    padding: 8vh 8vh 14vh 8vh;
+    text-align: center  ;
+}
+
+#course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#course .courses{
+    text-align: start;
+    background-color:cornsilk;
+    height: 100%;
+    position: relative;
+}
+
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size:cover;
+    background-position: center;
+}
+
+#course .courses .details{
+    padding: 15px 15px 0px 15px;
+}
+
+#course .courses .details i{
+    color:blue;
+    font-size: .9rem;
+}
+
+#course .courses .cost{
+    background-color: blueviolet;
+    color: white;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 130px;
+}
+
+#registration{
+    padding: 6vw 8vw  6vw 8vw;
+    background-image:url(../registrn2.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registration .remainder{
+    color: white;
+}
+
+#registration .remainder h1{
+    color: white;
+}
+
+#registration .remainder .time{
+    display: flex;
+    margin-top: 40px;
+}
+
+#registration .remainder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter:blur(4px);
+    box-shadow: 0 8 32px 0 rgba(31, 38, 135, .37);
+    border-radius: 5px;
+    margin: 0px 5px 10px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#registration .form{
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow:0 8 32px 0 rgba(31, 38, 135, .37) ;
+}
+
+#registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+
+#registration .form input::placeholder{
+    color: gray;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#registration .form .btn{
+    padding: 13px 35px;
+}
+
+#registration .form a.yellow{
+    color:black;
+    transition: 00.3s ease;
+    text-decoration: none;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color:yellow;
+    font-weight: 600;
+    border-radius: 10px;
+    display: inline-block
+}
+
+#registration .form a.yellow:hover{
+    background-color:yellowgreen;
+    color:blue;
+}
+
+#experts{
+    padding: 8vw 8vw 14vw 8vw;
+    text-align: center;
+}
+
+#experts .expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#experts .expert-box .profile{
+    background: steelblue;
+    padding: 30px 10px;
+}
+
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid black;    
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.pro-links i:hover{
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/*footer*/
+
+footer {
+    padding: 8vw;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-col{
+    padding-bottom: 40px;
+}
+
+footer h3,
+footer h6{
+    color: white;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    color: thistle;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer li:hover{
+    color: white;
+}
+
+footer p{
+    color:white;
+    padding-bottom: 10px;
+}
+
+footer .subscribe{
+    margin-top: 10px;
+}
+
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background-color:white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    color:black;
+    transition: 0,3s ease;
+}
+
+footer input:hover{
+    background-color: black;
+    color: white;
+}
+
+footer .subscribe a{
+    padding: 11px 15px;
+    margin-left: 5px;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+footer .subscribe a:hover{
+    background-color: black;
+    color: white;
+}
+
+footer .copyriht{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyriht .pro-links i{
+    padding: 10px 13px;
+    border: 1px solid black;   
+    background-color: thistle; 
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer .copyriht .pro-links i:hover{
+    background-color:yellow;
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width:769) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav img {
+        width: 130px;
+        cursor: pointer;
+    }
+
+    #menu-ham{
+        display: initial;
+    }
+    
+    #menu-close{
+        display: none;
+    }
+
+    nav .navigation ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
